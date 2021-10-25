@@ -1,0 +1,22 @@
+Publicera & signera app
+
+I Android studio
+ Generate signed bundle or APK
+ Create new 
+ Välj en plats i datorn vart nyckeln ska sparas
+ Sätt ett lösenord till nyckeln
+ Under Key
+ Skapa ett alias & ett nytt lösenord.
+ Sätt validity till valfritt antal år. 
+Skapa ett certifikat bestående av,
+namn
+organisations enhet
+organisation
+ Adressinformation
+Tryck ok
+ Tryck next
+ Välj plats på apk filen.
+
+Då har du en skapad apk fil och ett certifikat.
+
+Apkfilen som jag har signerat ligger i denna mapp
