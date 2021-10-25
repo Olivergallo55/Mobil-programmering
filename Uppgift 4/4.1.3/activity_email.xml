@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Email">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:background="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="#BF1111"
+        >
+    </include>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-40dp"
+        android:text="@string/email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+       />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/textView"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:hint="Email"
+
+        android:autofillHints=""
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Subject"
+        android:layout_below="@id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Message"
+        android:layout_below="@id/subject"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_below="@id/message"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:onClick="sendEmail"/>
+
+    <Button
+        android:id="@+id/attach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Folder"
+        android:layout_below="@id/button4"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:onClick="openFolder"/>
+
+
+</RelativeLayout>

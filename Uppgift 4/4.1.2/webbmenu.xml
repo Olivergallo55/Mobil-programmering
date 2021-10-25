@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/aftonbladet"
+        android:id="@+id/aftonbladet"
+        app:showAsAction="never"
+        />
+
+    <item android:title="@string/dn"
+        android:id="@+id/dn"
+        app:showAsAction="never"
+        />
+    <item android:title="@string/expressen"
+        android:id="@+id/expressen"
+        app:showAsAction="never"
+        />
+
+
+</menu>

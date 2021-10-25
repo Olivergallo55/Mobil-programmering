@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/pnna_webbsida"
+    android:id="@+id/öpnnawebbsida"
+    app:showAsAction="never"
+    />
+    <item android:title="@string/youtube"
+    android:id="@+id/youtube"
+    app:showAsAction="never"
+    />
+    <item android:title="@string/email"
+        android:id="@+id/email"
+        app:showAsAction="never"
+        />
+</menu>
